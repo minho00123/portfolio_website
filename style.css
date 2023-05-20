@@ -232,6 +232,105 @@ header {
   mix-blend-mode: luminosity;
 }
 
+/* EVENT */
+.event {
+  text-align: center;
+}
+
+.event h1 {
+  margin-bottom: 1em;
+}
+
+.event-wrap {
+  background: linear-gradient(120deg, #7f7fd6, #9ad5d6);
+  padding: 3em;
+  border-radius: 37px;
+}
+
+.event .btn {
+  background-color: #000;
+  font-size: 1rem;
+}
+
+.event .btn:hover {
+  background-color: #cc8c2d;
+}
+
+/* FOOTER */
+.footer {
+  font-family: "Outfit", sans-serif;
+  margin-top: 5em;
+}
+
+.footer-col ul li {
+  margin-bottom: 1em;
+}
+
+.footer-a {
+  color: #fff;
+  font-weight: 200;
+}
+
+.footer-col h4 {
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+  font-weight: 600;
+  font-size: 1.25em;
+}
+
+.icons ul {
+  display: flex;
+}
+
+.icons li {
+  margin-right: 1em;
+}
+
+.icons a:hover {
+  color: #9ad5d6;
+}
+
+.footer-input {
+  background-color: #24225a;
+  padding: 1em 6em 1em 1.5em;
+  border-radius: 100px;
+  border: 0;
+  outline: 0;
+  font-family: "Output", sans-serif;
+  font-size: 16px;
+  color: #fff;
+  position: relative;
+}
+
+.footer-btn {
+  position: absolute;
+  top: 0;
+  left: 16em;
+}
+
+.news-wrap {
+  position: relative;
+}
+
+.footer .btn:hover {
+  background-color: #cc8c2d;
+}
+
+.newsletter h4 {
+  margin: 1em 0;
+  font-size: 1.25em;
+}
+
+::placeholder {
+  color: #fff;
+}
+
+.page-end {
+  background: linear-gradient(to right, #9ad5d6, #91d2d2);
+  width: 100%;
+  height: 1vh;
+}
+
 /* ANIMATIONS */
 
 .hamburger.active .bar:nth-child(1) {
