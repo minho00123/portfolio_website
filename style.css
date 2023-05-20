@@ -126,6 +126,60 @@ header {
   z-index: -1;
 }
 
+/* COMPANY */
+:root {
+  --marque-width: 100vw;
+  --marque-height: 8vh;
+  --marque-elements-displayed: 4;
+  --marque-element-width: calc(
+    var(--marque-width) / var(--marque-elements-displayed)
+  );
+  --marque-animation-duration: calc(var(--marque-elements) * 4s);
+}
+
+.marque {
+  width: var(--marque-width);
+  height: var(--marque-height);
+  background-color: #24225a;
+  overflow: hidden;
+  position: relative;
+  user-select: none;
+  z-index: -1;
+}
+
+.marque-content {
+  list-style: none;
+  height: 100%;
+  display: flex;
+  animation: scrolling var(--marque-animation-duration) linear infinite;
+  align-items: center;
+}
+
+@keyframes scrolling {
+  0% {
+    transform: translateX(0vw);
+  }
+  100% {
+    transform: translateX(
+      calc(-1 * var(--marque-element-width) * var(--marque-elements))
+    );
+  }
+}
+
+.marque-content li {
+  width: var(--marque-element-width);
+  flex-shrink: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3rem;
+  white-space: nowrap;
+}
+
+.marque-content li img {
+  user-select: none;
+}
+
 /* ANIMATIONS */
 
 .hamburger.active .bar:nth-child(1) {
