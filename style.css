@@ -180,6 +180,29 @@ header {
   user-select: none;
 }
 
+/* BUY */
+.buy {
+  text-align: center;
+}
+
+.buy p {
+  margin-bottom: 3em;
+}
+
+/* BUY TWO */
+.buy-two {
+  text-align: center;
+  margin-top: 10em;
+}
+
+.buy-two p {
+  margin-bottom: 3em;
+}
+
+.buy-two img {
+  margin-top: 1.5em;
+}
+
 /* ANIMATIONS */
 
 .hamburger.active .bar:nth-child(1) {
@@ -229,12 +252,24 @@ header {
   border-radius: 100px;
 }
 
+.btn:hover {
+  background-color: #7f7fd691;
+}
+
 .ghost {
   background: none;
   border: 2px solid #9ad5d6;
   padding: 1em 1.5em;
   border-radius: 100px;
   color: #fff;
+}
+
+.ghost:hover {
+  background-color: #cc8c2d;
+}
+
+.normalizer > * + * {
+  margin-top: 1.25rem;
 }
 
 /* MEDIA QUERY */
