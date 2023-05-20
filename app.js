@@ -27,3 +27,25 @@ root.style.setProperty("--marque-elements", marqueContent.children.length);
 for (let i = 0; i < marqueElementsDisplayed; i++) {
   marqueContent.appendChild(marqueContent.children[i].cloneNode(true));
 }
+
+// MEDIA QUERY
+const marqueAni = document.getElementById("marque-ani");
+const marqueFixed = document.getElementById("marque-fixed");
+
+function screenChange(e) {
+  if (e.matches) {
+    // if the screen is above 800px then...
+    marqueAni.classList.add("hide");
+    marqueFixed.classList.remove("hide");
+  } else {
+    // if the screen is below 800px then...
+    marqueFixed.classList.add("hide");
+    marqueAni.classList.remove("hide");
+  }
+}
+
+const mediaQuery = window.matchMedia("(min-width: 800px)");
+
+mediaQuery.addListener(screenChange);
+
+screenChange(mediaQuery);
