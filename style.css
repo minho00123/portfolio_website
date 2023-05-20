@@ -203,6 +203,35 @@ header {
   margin-top: 1.5em;
 }
 
+/* TESTIMONIALS */
+.reviews {
+  text-align: center;
+}
+
+.reviews h1 {
+  margin-bottom: 2.5em;
+}
+
+.reviews-title {
+  color: #aad9d9;
+}
+
+.grid-item {
+  background-color: #24225a;
+  padding: 4em 2em;
+  position: relative;
+  margin-bottom: 8em;
+}
+
+.grid-img {
+  position: absolute;
+  top: -5.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  user-select: none;
+  mix-blend-mode: luminosity;
+}
+
 /* ANIMATIONS */
 
 .hamburger.active .bar:nth-child(1) {
