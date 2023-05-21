@@ -492,6 +492,73 @@ header {
     opacity: 75%;
   }
 
+  /* BUY */
+  .buy h2 {
+    margin-top: 3em;
+  }
+
+  .buy h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .buy-left {
+    width: 45%;
+  }
+
+  .buy-right {
+    width: 50%;
+    text-align: left;
+  }
+
+  /* BUY 2 */
+  .buy-two {
+    margin-top: 5em;
+  }
+
+  .buy-two h1 {
+    margin-bottom: 0.5em;
+  }
+
+  .two-left {
+    width: 45%;
+    text-align: left;
+  }
+
+  .two-right {
+    width: 40%;
+  }
+
+  /* TESTIMONIALS */
+  .reviews {
+    padding-top: 5em;
+  }
+
+  .grid-parent {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 3em;
+  }
+
+  /* EVENT */
+  .event-wrap {
+    padding: 10em;
+  }
+
+  .event h1 {
+    font-size: 3.5rem;
+  }
+
+  /* FOOTER */
+  .row {
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 3em;
+  }
+
+  .footer-a:hover {
+    text-decoration: underline;
+  }
+
   /* REUSABLES */
   .h1 {
     font-size: 4.25rem;
